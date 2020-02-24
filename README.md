@@ -85,26 +85,26 @@ spec:
 
 You can customize the behavior of this image with the environment variables:
 
-### `**DB_HOST**`
+### **`DB_HOST`**
 This variable is mandatory and specifies the host of the MySQL server
 
-### `**DB_NAME**`
+### **`DB_NAME`**
 This variable is mandatory and specifies the name of the database to backup
 
-### `**DB_USER**`
+### **`DB_USER`**
 This variable is mandatory and specifies the user with read access to the database
 
-### `**DB_USER**`
+### **`DB_USER`**
 This variable is mandatory and specifies the password for that user
 
-### `**FTP_HOST**`
+### **`FTP_HOST`**
 This variable is optional and specifies the host of the FTP server. If this variable is not present, tha backup will be backed up only to the volume.
 
-### `**FTP_USER**`
+### **`FTP_USER`**
 This variable is optional and specifies the user with write access to the ftp server
 
-### `**FTP_PASS**`
+### **`FTP_PASS`**
 This variable is optional and specifies the password of the ftp user
 
-### `**FTP_DESTINATION**`
+### **`FTP_DESTINATION`**
 This variable is optional and specifies the destination folder in the ftp server to save the backup
