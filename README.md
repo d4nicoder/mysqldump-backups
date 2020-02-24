@@ -94,7 +94,7 @@ This variable is mandatory and specifies the name of the database to backup
 ### **`DB_USER`**
 This variable is mandatory and specifies the user with read access to the database
 
-### **`DB_USER`**
+### **`DB_PASS`**
 This variable is mandatory and specifies the password for that user
 
 ### **`FTP_HOST`**
