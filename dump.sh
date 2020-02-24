@@ -56,11 +56,7 @@ if [ $status -eq 0 ]; then
 			exit 1
 		fi
 		echo "Uploading to FTP server"
-lftp -u ${FTP_USER},${FTP_PASS} ${FTP_HOST} << EOF
-cd ${FTP_DESTINATION}
-put ${BACKUP_DEST}
-bye
-EOF
+		ncftpput -u $FTP_USER -p $FTP_PASS $FTP_HOST $FTP_DESTINATION $BACKUP_DEST
 		echo "Upload done"
 		exit 0
 	else
