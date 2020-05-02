@@ -21,7 +21,6 @@ fi
 FILE_NAME=mysql-${DB_NAME}-$( date +%y%m%d-%H%M ).tar.gz
 BACKUP_DEST="/dump/${FILE_NAME}"
 TEMP_DEST="/tmp/dump.sql"
-#mysqldump -u root -pRcs09o11 --all-databases --skip-lock-tables --opt > $BACKUP_DEST
 mysqldump -h ${DB_HOST} -u "${DB_USER}" --password="${DB_PASS}" --single-transaction --skip-lock-tables --opt "${DB_NAME}" > "${TEMP_DEST}"
 
 status=$?
